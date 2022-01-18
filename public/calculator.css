@@ -120,5 +120,26 @@ p {
     background-color: #3C3935;
 }
 
+#warning-code-wrapper {
+    text-align: right;
+    position:static;
+   
+}
 
+.edit-btn {
+    margin: 0;
+   float: right;
+    padding: 5px;
+}
+
+.red-back {
+    background-color: red!important;
+}
+
+.nameP {
+    background-color: transparent;
+    border: none;
+    width:80px;
+    outline: none;
+}
 

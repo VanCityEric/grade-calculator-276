@@ -5,15 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=h2, initial-scale=1.0">
     <link rel="stylesheet" href="calculator.css">
-    <title>Document</title>
+    <title>276 Calculator</title>
 </head>
 <body>
     <div id="wrapper">
         <h2 class="sans-serif">Grade Calculator</h2>
         <div id="calc-container">
             <h3 id="activities-header" class="serif red-text">Activities</h3>
-            <p class="serif">Give grades to the numeric activities:</p>
-
+            <p class="serif">Give grades to the numeric activities: <br></p>
+            <div id="warning-code-wrapper">
+                <p id="warning-code" class="red-text serif"></p>
+            </div>
+        
             <table class="serif">
                 <thead>
                     <tr>
@@ -26,7 +29,7 @@
                 </thead>
 
                 <tr>
-                    <td class="name"></td>
+                    <td class="name"><p class="nameP"></p></td>
                     <td class="short-name"></td>
                     <td><input class="weight" min="0" type="number"></td>
                     <td><input class="received-grade" min="0" max="100" type="number"> / <input class="grade-out-of" min="0" max="100" type="number"></td>
@@ -34,7 +37,7 @@
                 </tr>
 
                 <tr>
-                    <td class="name"></td>
+                    <td class="name"><p class="nameP"></p></td>
                     <td class="short-name"></td>
                     <td><input class="weight" min="0" type="number"></td>
                     <td><input class="received-grade" min="0" max="100" type="number"> / <input class="grade-out-of" min="0" max="100" type="number"></td>
@@ -42,7 +45,7 @@
                 </tr>
 
                 <tr>
-                    <td class="name"></td>
+                    <td class="name"><p class="nameP"></p></td>
                     <td class="short-name"></td>
                     <td><input class="weight" min="0" type="number"></td>
                     <td><input class="received-grade" min="0" max="100" type="number"> / <input class="grade-out-of" min="0" max="100" type="number"></td>
@@ -50,26 +53,31 @@
                 </tr>
 
                 <tr>
-                    <td class="name"></td>
+                    <td class="name"><p class="nameP"></p></td>
                     <td class="short-name"></td>
                     <td><input class="weight" min="0" type="number"></td>
                     <td><input class="received-grade" min="0" max="100" type="number"> / <input class="grade-out-of" min="0" max="100" type="number"></td>
                     <td><p class="percent"></p></td>
                 </tr>
+               
 
             </table>
+            
 
             <button onclick="onAddActivity()"> ADD ACTIVITY</button>
             <h3 class="serif red-text">Result</h3>
             <p id="result" class="serif"></p>
 
+          
             <div id="error-wrapper" class="hidden">
                 <p id="error-code" class="red-text serif"></p>
             </div>
+           
+          
 
             <div id="bottom-buttons-container">
                 <button onclick="getWeightedGrade()">WEIGHTED</button>
-                <button onclick="getMean()">MEAN</button>
+                <button id="mean-btn" onclick="getMean()">MEAN</button>
                 <button id="reset-btn" onclick="onReset()">RESET</button>
             </div>
            
