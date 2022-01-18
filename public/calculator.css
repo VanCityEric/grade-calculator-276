@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap');
+
+
+
+
+html {
+    background-color:#B51019 ;
+}
+
+.sans-serif {
+    font-family: sans-serif;
+}
+
+.serif {
+    font-family: 'PT Serif', serif;
+}
+
+.red-text {
+    color: #B51019;
+}
+
+#wrapper {
+    padding: 10px;
+    background-color: white;
+    padding: 50px 30px 50px 30px;
+    width: fit-content;
+    margin: 0 auto;
+    border-top: 30px solid #3C3935;
+    border-bottom: 30px solid #3C3935;
+    box-shadow: 0px 3px 15px rgba(0,0,0,0.4);
+}
+
+#calc-container {
+    background-color: #E9EFF1;
+    width: fit-content;
+    padding: 20px;
+    border: 1px solid #D5E3E8; 
+    border-radius: 5px;
+    
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+}
+
+td, th {
+    border: 1px solid #C4C6C6;
+    padding: 5px;
+    text-align: left;
+    width: 150px;
+}
+
+td {
+    height: 40px;
+}
+
+th {
+    background-color: #dddddd;
+    font-weight: 700;
+}
+
+input {
+    width: 40px;
+    padding: 10px 5px 10px 5px;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+button {
+    background-color: #B51019;
+    outline: none;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 30px;
+}
+
+button:hover {
+    background-color: #960d14;
+    cursor: pointer;
+    transition: ease 0.5s;
+}
+
+#bottom-buttons-container {
+    text-align: right;
+}
+
+p {
+    display: inline;
+}
+
+#error-code {
+    display:inline-flex;
+    text-align: right;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid rgb(180, 180, 180);
+    
+}
+
+#error-wrapper {
+    text-align: right;
+    margin-bottom: -30px;
+}
+
+.hidden {
+    display: none;
+}
+
+#reset-btn {
+    background-color: #3C3935;
+}
+
+
+
